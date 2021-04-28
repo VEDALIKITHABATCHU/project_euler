@@ -1,0 +1,13 @@
+def even_fibanocci_sum(limit):
+    result = 0
+    current_fib = 1
+    next_fib = 2
+
+    while current_fib <= limit:
+        if current_fib % 2 == 0:
+            result += current_fib
+        current_fib, next_fib = next_fib, current_fib + next_fib
+    return result
+
+limit = 4000000
+print(even_fibanocci_sum(limit))

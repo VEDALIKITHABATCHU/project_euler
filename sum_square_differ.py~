@@ -1,0 +1,8 @@
+#(n * (n + 1) / 2 ) ** 2
+#n * (n + 1) * (2 * n + 1) / 6
+num = int(input("Enter number : "))
+if(num > 0):
+    sum_of_squares = (num * (num + 1) * (2 * num + 1)) / 6
+    squares_of_sum = ((num * (num + 1)) / 2) ** 2
+    difference = squares_of_sum - sum_of_squares
+    print(difference)

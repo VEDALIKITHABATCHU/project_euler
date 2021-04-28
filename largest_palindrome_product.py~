@@ -1,0 +1,9 @@
+def palindrome(num):
+    return str(num) == str(num)[::-1]
+maximum_num = 0
+for num in range(100,999):
+    for num1 in range(num + 1, 1000):
+        product = num * num1
+        if palindrome(product) and (product > maximum_num):
+            maximum_num = product
+print maximum_num
